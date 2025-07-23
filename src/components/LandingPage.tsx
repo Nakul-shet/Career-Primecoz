@@ -56,12 +56,12 @@ const LandingPage = () => {
               PrimeCoz gives you the skills, confidence, and real practice to ace every BPO interview—voice or non-voice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6 w-full">
-              <button
-                onClick={() => window.location.href = '/subscribe'}
+              <Link
+                to="/subscribe"
                 className="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
               >
                 Start Learning Now
-              </button>
+              </Link>
               <Link
                 to="/login"
                 className="bg-white border-2 border-indigo-600 text-indigo-700 hover:bg-indigo-50 px-10 py-5 rounded-xl text-xl font-bold transition-all duration-200"
