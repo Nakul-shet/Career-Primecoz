@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import AdminLogin from './components/AdminLogin';
 import AdminDashboard from './components/AdminDashboard';
 import Subscribe from './components/Subscribe';
+import Payment from './components/Payment';
 import MemberLogin from './components/MemberLogin';
 import MemberDashboard from './components/MemberDashboard';
 import { AuthProvider } from './contexts/AuthContext';
@@ -18,6 +19,7 @@ function App() {
             <Route path="/admin" element={<AdminLogin />} />
             <Route path="/admin/dashboard" element={<AdminDashboard />} />
             <Route path="/subscribe" element={<Subscribe />} />
+            <Route path="/payment" element={<Payment />} />
             <Route path="/login" element={<MemberLogin />} />
             <Route path="/dashboard" element={<MemberDashboard />} />
           </Routes>

@@ -23,8 +23,8 @@ const LandingPage = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Target className="h-8 w-8 text-blue-600 mr-2" />
-                <span className="text-xl font-bold text-gray-900">BPO Interview Prep</span>
+                <Target className="h-8 w-8 text-indigo-600 mr-2" />
+                <span className="text-2xl font-extrabold tracking-tight text-indigo-700">PrimeCoz</span>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -38,29 +38,62 @@ const LandingPage = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Master Your BPO Interview
+      <section className="relative bg-gradient-to-br from-indigo-50 via-blue-50 to-white text-gray-900 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none animate-pulse-slow">
+          <svg width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute inset-0 w-full h-full">
+            <circle cx="80%" cy="20%" r="200" fill="#c7d2fe" fillOpacity="0.18" />
+            <circle cx="20%" cy="80%" r="180" fill="#a5b4fc" fillOpacity="0.12" />
+          </svg>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 flex flex-col lg:flex-row items-center justify-between text-center lg:text-left relative z-10 gap-12">
+          {/* Left: Text Content */}
+          <div className="flex-1 flex flex-col items-center lg:items-start">
+            <Target className="h-16 w-16 text-indigo-600 mb-4 drop-shadow-lg" />
+            <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-tight leading-tight">
+              Your BPO Success Starts Here
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-blue-100">
-              Comprehensive preparation for Voice & Non-Voice BPO roles
+            <p className="text-xl md:text-2xl mb-8 text-gray-700 max-w-2xl font-medium">
+              PrimeCoz gives you the skills, confidence, and real practice to ace every BPO interview—voice or non-voice.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/subscribe"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-colors shadow-lg hover:shadow-xl transform hover:scale-105"
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6 w-full">
+              <button
+                onClick={() => window.location.href = '/payment'}
+                className="bg-indigo-600 hover:bg-indigo-700 text-white px-10 py-5 rounded-xl text-xl font-bold shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-200"
               >
-                Subscribe Now
-              </Link>
+                Start Learning Now
+              </button>
               <Link
                 to="/login"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold transition-colors"
+                className="bg-white border-2 border-indigo-600 text-indigo-700 hover:bg-indigo-50 px-10 py-5 rounded-xl text-xl font-bold transition-all duration-200"
               >
                 Member Login
               </Link>
             </div>
+            <div className="flex flex-col items-center lg:items-start mt-2">
+              <span className="text-sm text-gray-500 mb-2">Trusted by 2,000+ learners</span>
+              <div className="flex items-center gap-2">
+                <Star className="h-5 w-5 text-yellow-400" />
+                <Star className="h-5 w-5 text-yellow-400" />
+                <Star className="h-5 w-5 text-yellow-400" />
+                <Star className="h-5 w-5 text-yellow-400" />
+                <Star className="h-5 w-5 text-yellow-400" />
+                <span className="ml-2 text-gray-700 font-semibold">4.9/5.0</span>
+              </div>
+            </div>
+          </div>
+          {/* Right: Illustration */}
+          <div className="flex-1 flex justify-center items-center mt-12 lg:mt-0">
+            <svg width="340" height="220" viewBox="0 0 340 220" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-lg">
+              <rect x="20" y="40" width="300" height="140" rx="18" fill="#EEF2FF" />
+              <rect x="40" y="60" width="260" height="100" rx="12" fill="#C7D2FE" />
+              <rect x="60" y="80" width="220" height="60" rx="8" fill="#6366F1" fillOpacity="0.15" />
+              <rect x="80" y="100" width="180" height="20" rx="4" fill="#6366F1" fillOpacity="0.25" />
+              <rect x="80" y="130" width="120" height="12" rx="3" fill="#6366F1" fillOpacity="0.18" />
+              <circle cx="170" cy="170" r="18" fill="#6366F1" fillOpacity="0.18" />
+              <rect x="120" y="170" width="100" height="8" rx="2" fill="#6366F1" fillOpacity="0.12" />
+              <rect x="60" y="60" width="40" height="10" rx="3" fill="#6366F1" fillOpacity="0.18" />
+              <rect x="240" y="60" width="60" height="10" rx="3" fill="#6366F1" fillOpacity="0.18" />
+            </svg>
           </div>
         </div>
       </section>
